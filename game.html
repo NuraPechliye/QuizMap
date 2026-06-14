@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizmaP Jogo</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="index.js" defer></script>
+    <script src="quiz.js" defer></script>
+
+    <script src="rascunhojs.js" defer></script>
+</head>
+
+<body>
+
+
+    <div class="menu">
+        <a href="index.html">Início</a>
+        <a href="comojogar.html">Como Jogar</a>
+        <a href="">Configurações</a>
+
+    </div>
+
+        <div>
+        <center>
+
+            <audio id="player"></audio>
+
+            <button class="botaomus" onclick="tocar('./sound/backgroundsound.wav')">Música 1</button>
+            <button class="botaomus" onclick="tocar('./sound/World Map.mp3')">Música 2</button>
+            <button class="botaoparar" onclick="tocar('')">PARAR</button>
+
+        </center>
+    </div>
+
+    <div class="container">
+
+        <div id="map"></div>
+
+    </div>
+
+
+    <div id="quiz">
+        <h2>QUIZ MAP</h2>
+        <br>
+        <main>
+            <div class="content"></div>
+
+            <span class="spnqntd"></span>
+            <span class="question"></span>
+
+            <div id="" class="answers"></div>
+
+            <div class="finish">
+                <span></span>
+                <button>Reiniciar</button>
+            </div>
+        </main>
+
+    </div>
+
+    <div class="rodape">
+        <footer>
+            <p>Contacte-nos: quizmap.ouvidoria@gmail.com | +55 (11) 98345-2988 | © 2025 All Rights Reserved
+            </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
