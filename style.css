@@ -57,7 +57,7 @@ body {
 }
 
 
-button {
+.bot {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: black 1px;
     margin: 300px;
@@ -69,7 +69,7 @@ button {
     
 }
 
-button:hover {
+.bot:hover {
     background-color: rgb(255, 70, 70);
 }
 
