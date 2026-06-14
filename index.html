@@ -11,6 +11,7 @@
     <script src="sw.js"></script>
     <link rel="stylesheet" href="style.css">
     
+    
 </head>
 
 <body>
@@ -31,10 +32,15 @@
 
     </div>
 
-    <div class="musica">
+    <div>
         <center>
-            <audio src="./sound/backgroundsound.wav" controls autoplay></audio>
-            <audio src="./sound/World Map.mp3" controls autoplay></audio>
+
+            <audio id="player"></audio>
+
+            <button class="botaomus" onclick="tocar('./sound/backgroundsound.wav')">Música 1</button>
+            <button class="botaomus" onclick="tocar('./sound/World Map.mp3')">Música 2</button>
+            <button class="botaoparar" onclick="tocar('')">PARAR</button>
+
         </center>
     </div>
 
